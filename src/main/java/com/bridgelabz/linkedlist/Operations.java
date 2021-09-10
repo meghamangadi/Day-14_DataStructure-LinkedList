@@ -39,14 +39,18 @@ public class Operations {
 		System.out.println("Delete Node is" + deletedNode.data);
 		linkedList.print();
 	}
-	
 
 	public static void deleteLastNode() {
-		 System.out.println("before");
-	        LinkedList linkedList = addeElementAtStart();
-	        linkedList.popLast();
-	        System.out.println("After");
-	        linkedList.print();
+		System.out.println("before");
+		LinkedList linkedList = addeElementAtStart();
+		linkedList.popLast();
+		System.out.println("After");
+		linkedList.print();
 
-	    }
+	}
+
+	public static void searchNodeBaseOnValue() {
+		LinkedList linkedList = addeElementAtStart();
+		linkedList.searchNode(30);
+	}
 }
