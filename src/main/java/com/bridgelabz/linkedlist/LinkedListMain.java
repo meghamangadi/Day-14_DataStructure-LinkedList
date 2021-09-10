@@ -15,6 +15,7 @@ public class LinkedListMain {
 		System.out.println("Enter 5 to delete Last element");
 		System.out.println("Enter 6 to find index number and node base on value");
 		System.out.println("Enter 7 to add element at specific node in LinkedList");
+		System.out.println("Enter 8 to delete node in between the LinkedList");
 
 		switch (scanner.nextInt()) {
 		case 1:
@@ -35,9 +36,12 @@ public class LinkedListMain {
 		case 6:
 			Operations.searchNodeBaseOnValue();
 			break;
-		 case 7:
-             Operations.insertAtGivenNode();
-             break;
+		case 7:
+			Operations.insertAtGivenNode();
+			break;
+		case 8:
+			Operations.deleteInBetweenNode();
+			break;
 		}
 	}
 
