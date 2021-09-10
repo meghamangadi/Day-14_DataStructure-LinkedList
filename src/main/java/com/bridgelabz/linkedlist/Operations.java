@@ -3,7 +3,6 @@ package com.bridgelabz.linkedlist;
 public class Operations {
 
 	public static LinkedList addeElementAtStart() {
-
 		LinkedList linkedList = new LinkedList();
 		linkedList.push(70);
 		linkedList.push(30);
@@ -53,4 +52,14 @@ public class Operations {
 		LinkedList linkedList = addeElementAtStart();
 		linkedList.searchNode(30);
 	}
+
+	public static void insertAtGivenNode() {
+		System.out.println("Before Insertion");
+		LinkedList linkedList = addeElementAtStart();
+		Node newNode = new Node(40);
+		Node previousNode = linkedList.insertAfter(30, newNode);
+		System.out.println("After Insertion");
+		linkedList.print();
+	}
+
 }
