@@ -17,5 +17,22 @@ public class Stack {
 	        top = linkedList.push(56);
 	        linkedList.print();
 	    }  
+	    public int peek() {
+	        push();
+	        System.out.println("Top element is " + this.top.data);
+	        return this.top.data;
+	    }
 
+	    public void pop() {
+	        System.out.println("Before");
+	        push();
+	        Node temp = top;
+	        while (temp != null) {
+	            linkedList.pop();
+	            temp = temp.next;
+	        }
+	        System.out.println("After");
+	        linkedList.print();
+	    }
+	
 }
