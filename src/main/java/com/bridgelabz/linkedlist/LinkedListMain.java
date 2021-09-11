@@ -16,7 +16,7 @@ public class LinkedListMain {
 		System.out.println("Enter 6 to find index number and node base on value");
 		System.out.println("Enter 7 to add element at specific node in LinkedList");
 		System.out.println("Enter 8 to delete node in between the LinkedList");
-		 System.out.println("Enter 9 to sort linked list");
+		 System.out.println("Enter 9 to create ascending ordered linked list");
 
 		switch (scanner.nextInt()) {
 		case 1:

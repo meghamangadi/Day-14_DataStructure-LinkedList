@@ -83,10 +83,10 @@ public class Operations {
 	        linkedList.push(40);
 	        linkedList.push(30);
 	        linkedList.push(56);
-	        System.out.println("Before");
+	        System.out.println("Before sorting");
 	        linkedList.print();
 	        linkedList.sort();
-	        System.out.println("After");
+	        System.out.println("After sorting");
 	        linkedList.print();
 	    }
 }
